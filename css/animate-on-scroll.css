@@ -1,0 +1,108 @@
+/*Animations - Keyframes*/
+@keyframes slideToRight{
+    from{
+        transform: translateX(-100%);
+
+    }
+
+    to{
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideToTop{
+    from{
+        transform: translateY(200%);
+
+    }
+
+    to{
+        transform: translateY(0);
+    }
+}
+
+@keyframes opacity{
+    from{
+        opacity: 0;
+
+    }
+
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes slideToRightAndOpacity{
+    from{
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideToTopAndOpacity{
+    from{
+        transform: translateY(200%);
+        opacity: 0;
+
+    }
+
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/*Animations - classes*/
+.animate-slide-to-right{
+    animation: slideToRight 2s both;
+}
+
+
+.animate-slide-to-right-and-opacity{
+    animation: slideToRightAndOpacity 2s both;
+}
+
+
+.animate-slide-to-top{
+    animation: slideToTop 2s both;
+}
+
+.animate-slide-to-top-and-opacity{
+    animation: slideToTopAndOpacity 2s both;
+}
+
+.animate-opacity{
+    animation: opacity 2s both;
+}
+
+.animation-delay-1{
+    animation-delay: 0.2s;
+}
+
+.animation-delay-2{
+    animation-delay: 0.4s;
+}
+.animation-delay-3{
+    animation-delay: 0.6s;
+}
+
+.animation-delay-4{
+    animation-delay: 0.8s;
+}
+
+.animation-reverse{
+    animation-direction: reverse;
+}
+
+.hidden{
+    opacity: 0;
+}
+
+.show{
+    opacity: 1;
+}
